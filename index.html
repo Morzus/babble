@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <title>Vegans - Babble</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    <script src="scripts/main.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+
+    <!-- MODAL -->
+
+
+    <div id="modal">
+        <div class="ModalConent">
+            <h2>Who are you?</h2>
+            <form name="register">
+                <div class="u-field">
+                    Full name: <input type="text" name="name" id="fullname"/>
+                </div>
+                <br>
+                <div class="u-field">
+                    Email: <input type="text" name="email" id="email"/>
+                </div>
+            </form>
+            <div class="options">
+                <button class="Button Button--anbutton"  id="button"> Stay Anonymous </button>
+                <button class="Button Button--savebutton"  id="button1"> Save </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CHAT -->
+
+
+    <div class="header">
+        <div class="title">
+            <img src="images/logo.png" class="Logo" alt="Logo">
+        </div>
+        <div class="BodyHead" >
+            <h1>Vegans</h1>
+            <dl>
+                <dt> <img src="images/bubble.png" alt="Messages"></dt>
+                <dd id="NumberMsgs">0</dd>
+                <dt> <img src="images/counter.png" alt="Users"></dt>
+                <dd id="NumberUsers">0</dd>
+            </dl>
+        </div>
+    </div>
+    <div>
+        <nav></nav>
+        <div class="u-bod">
+            <ol index="0" id="msglist"></ol>
+            <a name="pageend"></a>
+        </div>
+        <div class="u-bottom" id="bottom">
+            <form id="inputform"> <!-- onkeyup="setHeight(this);" onkeydown="setHeight(this);" -->
+                <textarea placeholder="Type Text Here" autofocus id="to_print"  oninput="setHeight(this)"  onkeypress="sendnewmsg()"></textarea> <!--onkeypress="adjustHeight(this)" onkeyup="adjustHeight(this)" onkeydown="adjustHeight(this)"  -->
+            <a href="#pageend"><button type="button" class="Button Button--send" id="btnsend" aria-label="send" onclick="newmsg()"> <img src="images/send.jpg" alt="Send"/> </button></a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
