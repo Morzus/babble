@@ -18,11 +18,11 @@
             <h2>Who are you?</h2>
             <form name="register">
                 <div class="u-field">
-                    Full name: <input type="text" name="name" id="fullname"/>
+                    <label for="fullname">Full name:</label> <input type="text" name="name" id="fullname"/>
                 </div>
                 <br>
                 <div class="u-field">
-                    Email: <input type="text" name="email" id="email"/>
+                    <label for="email">Email: </label><input type="text" name="email" id="email"/>
                 </div>
             </form>
             <div class="options">
@@ -58,8 +58,8 @@
         </div>
         <div class="u-bottom" id="bottom">
             <form id="inputform"> <!-- onkeyup="setHeight(this);" onkeydown="setHeight(this);" -->
-                <textarea placeholder="Type Text Here" autofocus id="to_print"  oninput="setHeight(this)"  onkeypress="sendnewmsg()"></textarea> <!--onkeypress="adjustHeight(this)" onkeyup="adjustHeight(this)" onkeydown="adjustHeight(this)"  -->
-                <a href="#pageend"> </a><button type="button" class="Button Button--send" id="btnsend" aria-label="send" onclick="newmsg()"> <img src="images/send.jpg" alt="Send"/> </button>
+                <textarea placeholder="Type Text Here" autofocus id="to_print"  oninput="setHeight(this)"  onkeypress="sendnewmsg()" title="textArea"></textarea> <!--onkeypress="adjustHeight(this)" onkeyup="adjustHeight(this)" onkeydown="adjustHeight(this)"  -->
+               <!-- <a href="#pageend"> </a>--><button type="button" class="Button Button--send" id="btnsend" aria-label="send" onclick="newmsg()"> <img src="images/send.jpg" alt="Send"/> </button>
             </form>
         </div>
     </div>
