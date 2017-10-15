@@ -198,7 +198,7 @@
 
     function sendnewmsg(){
         if (window.event.keyCode == 13) {
-            window.location.href = "#pageend";
+            window.location = "#pageend";
             var info = JSON.parse(localStorage.getItem("babble"));
             var date = new Date();      
             //cretae message
